@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "codazen",
+    "url": "https://codazen.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.c:codazendev/codazen.dev"
+  },
+  "name": "codazen.dev",
+  "description": "codazen's fun little personal website",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
