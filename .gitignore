@@ -1,37 +1,11 @@
-# -----------------------------------------------------------------
-# .gitignore
-# Bare Minimum Git
-# https://salferrarello.com/starter-gitignore-file/
-# ver 20221125
-# -----------------------------------------------------------------
-
 # ignore all files starting with ~
 ~*
 
 # ignore node/grunt dependency directories
 node_modules/
 
-# Ignore build directories.
-/build
-/dist
-
-# ignore composer vendor directory
-/vendor
-
-# ignore components loaded via Bower
-/bower_components
-
-# ignore jekyll build directory
-/_site
-
-# ignore OS generated files
-ehthumbs.db
-Thumbs.db
-
-# ignore Editor files
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
+# Ignore output directory
+/public
 
 # ignore log files and databases
 *.log
@@ -61,11 +35,7 @@ Thumbs.db
 *.key
 *.pem
 
-# --------------------------------------------------------
-# BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
-# --------------------------------------------------------
-
-# track these files, if they exist
+# explicitly track these files, if they exist
 !.dockerignore
 !.editorconfig
 !.env.example
