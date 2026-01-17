@@ -5,6 +5,6 @@ export default function(eleventyConfig) {
 export const config = {
     dir: {
         input: "content",
-        output: "dist"
+        output: "public"
     }
 }
