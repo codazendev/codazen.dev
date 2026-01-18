@@ -13,7 +13,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "11": "npx @11ty/eleventy --serve --port=8080"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
