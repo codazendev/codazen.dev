@@ -2,3 +2,38 @@
     box-sizing: border-box;
     outline: 1px solid red;
 } */
+
+#layout-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "header header header"
+    "nav nav nav"
+    "aside-left main aside-right"
+    "footer footer footer"
+    / 1fr 2fr 1fr;
+}
+
+#layout-header {
+    grid-area: header;
+}
+
+#layout-nav {
+    grid-area: nav;
+}
+
+#layout-aside-left {
+    grid-area: aside-left;
+}
+
+#layout-main {
+    grid-area: main;
+}
+
+#layout-aside-right {
+    grid-area: aside-right;
+}
+
+#layout-footer {
+    grid-area: footer;
+}

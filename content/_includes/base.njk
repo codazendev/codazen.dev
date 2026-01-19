@@ -2,13 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ title }}{% if title !== "codazen's couch" %} | codazen's couch{% endif %}</title>
+        <title>{{ title }}
+            {% if title !== "codazen's couch" %}
+                | codazen's couch{% endif %}
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Codazen's funny little corner of the internet">
         <link rel="favicon" href="">
         <link rel="stylesheet" href="/assets/css/base.css">
     </head>
     <body>
-        {{ content | safe }}
+        <div id="layout-wrapper">
+            <header id="layout-header">
+                <fieldset>
+                    <legend>Header</legend>
+                    Hello! I'm codazen. I'm starting to break through the barriers that prevent me from being creative by pushing myself to
+                    create an indie web inspired site here for my silly little projects. Catch you along the way :>
+                </fieldset>
+            </header>
+            <nav id="layout-nav">
+                <fieldset>
+                    <legend>Nav</legend>
+                    Me Projects You? Us??
+                </fieldset>
+            </nav>
+            <aside id="layout-aside-left">
+                <fieldset>
+                    <legend>Left Aside</legend>
+                    Left aside
+                </fieldset>
+            </aside>
+            <main id="layout-main">
+                <fieldset>
+                    <legend>Main</legend>
+                    {{ content | safe }}
+                </fieldset>
+            </main>
+            <aside id="layout-aside-right">
+                <fieldset>
+                    <legend>Right Aside</legend>
+                    Right aside
+                </fieldset>
+            </aside>
+            <footer id="layout-footer">
+                <fieldset>
+                    <legend>Footer</legend>
+                    Copyright me or whatever
+                </fieldset>
+            </footer>
+        </div>
     </body>
 </html>
