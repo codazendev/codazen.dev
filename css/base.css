@@ -30,6 +30,14 @@ body {
     grid-area: nav;
 }
 
+#layout-nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 #layout-aside-left {
     grid-area: aside-left;
 }
