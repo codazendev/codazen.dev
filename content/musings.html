@@ -1,0 +1,8 @@
+---
+layout: base
+title: musings
+---
+
+{% for musing in collections.musing %}
+<a href="{{ musing.url }}">{{ musing.data.title }}</a>
+{% endfor %}
