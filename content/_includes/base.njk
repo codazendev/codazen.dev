@@ -12,48 +12,48 @@
         <link rel="stylesheet" href="/assets/css/base.css">
     </head>
     <body>
-        <div id="layout-wrapper">
-            <header id="layout-header">
+        <header>
+            <fieldset>
+                <legend>Header</legend>
+                Hello! I'm codazen. i'm working on this silly little site for my silly little projects. Catch you along the way :>
+            </fieldset>
+        </header>
+        
+        <nav>
+            <fieldset>
+                <legend>Nav</legend>
+                <ul id="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/musings/">Musings</a></li>
+                    <li><a href="/outgoing-links/">Outgoing Links</a></li>
+                    <li><a href="/useful-links/">Useful Links</a></li>
+                    <li><a href="/todo/">Todo</a></li>
+                    <li><a href="/sitemap/">Sitemap</a></li>
+                </ul>
+            </fieldset>
+        </nav>
+        
+        <div id="content">
+            <aside>
                 <fieldset>
-                    <legend>Header</legend>
-                    Hello! I'm codazen. i'm working on this silly little site for my silly little projects. Catch you along the way :>
-                </fieldset>
-            </header>
-            <nav id="layout-nav">
-                <fieldset>
-                    <legend>Nav</legend>
-                    <ul id="layout-nav-list">
-                        <li class="layout-nav-item"><a href="/">Home</a></li>
-                        <li class="layout-nav-item"><a href="/musings/">Musings</a></li>
-                        <li class="layout-nav-item"><a href="/outgoing-links/">Outgoing Links</a></li>
-                        <li class="layout-nav-item"><a href="/useful-links/">Useful Links</a></li>
-                    </ul>
-                </fieldset>
-            </nav>
-            <aside id="layout-aside-left">
-                <fieldset>
-                    <legend>Left Aside</legend>
-                    Left aside
+                    <legend>Aside</legend>
+                    idk
                 </fieldset>
             </aside>
-            <main id="layout-main">
+            
+            <main>
                 <fieldset>
                     <legend>Main</legend>
                     {{ content | safe }}
                 </fieldset>
             </main>
-            <aside id="layout-aside-right">
-                <fieldset>
-                    <legend>Right Aside</legend>
-                    Right aside
-                </fieldset>
-            </aside>
-            <footer id="layout-footer">
-                <fieldset>
-                    <legend>Footer</legend>
-                    Copyright me or whatever
-                </fieldset>
-            </footer>
         </div>
+
+        <footer>
+            <fieldset>
+                <legend>Footer</legend>
+                Copyright me or whatever
+            </fieldset>
+        </footer>
     </body>
 </html>
