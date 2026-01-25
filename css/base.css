@@ -1,3 +1,8 @@
+/* Imports */
+
+@import url(./normalize/modern-normalize.css);
+
+
 /* Custom fonts */
 
 @font-face {
