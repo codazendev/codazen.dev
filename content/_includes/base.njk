@@ -2,55 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ title }}
-            {% if title !== "codazen's couch" %}
-                | codazen's couch{% endif %}
-        </title>
+        <title>{{ title }}{% if title !== "codazen's couch" %}| codazen's couch{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Codazen's funny little corner of the internet">
         <link rel="favicon" href="">
         <link rel="stylesheet" href="/assets/css/base.css">
     </head>
     <body>
-        <header>
+        <header class="box">
             Hello! I'm codazen. I'm working on this silly little site for my silly little projects. Catch you along the way :>
         </header>
         
-        <nav>
-            <fieldset>
-                <legend>Nav</legend>
-                <ul id="navbar">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/musings/">Musings</a></li>
-                    <li><a href="/outgoing-links/">Outgoing Links</a></li>
-                    <li><a href="/useful-links/">Useful Links</a></li>
-                    <li><a href="/todo/">Todo</a></li>
-                    <li><a href="/sitemap/">Sitemap</a></li>
-                </ul>
-            </fieldset>
+        <nav class="box">
+            <ul id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/musings/">Musings</a></li>
+                <li><a href="/outgoing-links/">Outgoing Links</a></li>
+                <li><a href="/useful-links/">Useful Links</a></li>
+                <li><a href="/todo/">Todo</a></li>
+                <li><a href="/sitemap/">Sitemap</a></li>
+            </ul>
         </nav>
         
         <div id="content">
-            <aside>
-                <fieldset>
-                    <legend>Aside</legend>
-                    idk
-                </fieldset>
+            <aside class="box">
+                idk
             </aside>
             
-            <main>
-                <fieldset>
-                    <legend>Main</legend>
-                    {{ content | safe }}
-                </fieldset>
+            <main class="box">
+                {{ content | safe }}
             </main>
         </div>
 
-        <footer>
-            <fieldset>
-                <legend>Footer</legend>
-                Copyright me or whatever
-            </fieldset>
+        <footer class="box">
+            Copyright me or whatever
         </footer>
     </body>
 </html>
