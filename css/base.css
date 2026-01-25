@@ -66,22 +66,7 @@ nav {
     --section: "Navigation";
 }
 
-aside {
-    --section: "Aside";
-}
-
-main {
-    --section: "Main";
-}
-
-footer {
-    --section: "Footer";
-}
-
-
-/* Navbar */
-
-#navbar {
+#navlist {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -89,20 +74,23 @@ footer {
     padding: 0;
 }
 
-
-/* Page contents */
-
 #content {
     display: flex;
     gap: 2ch;
 }
 
 aside {
+    --section: "Aside";
     width: 20ch;
 }
 
 main {
+    --section: "Main";
     width: 80ch;
+}
+
+footer {
+    --section: "Footer";
 }
 
 
