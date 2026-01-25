@@ -1,3 +1,10 @@
+/* Custom fonts */
+
+@font-face {
+    font-family: AdwaitaMono;
+    src: url(./fonts/AdwaitaMono-Regular.ttf);
+}
+
 /* Overall page */
 
 *, *::before, *::after {
@@ -5,7 +12,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: AdwaitaMono;
     line-height: 1.5;
     max-width: 102ch;
     margin: 4lh auto;
