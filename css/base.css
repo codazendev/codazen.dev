@@ -5,6 +5,7 @@
     src: url(./fonts/AdwaitaMono-Regular.ttf);
 }
 
+
 /* Overall page */
 
 *, *::before, *::after {
@@ -13,13 +14,15 @@
 
 body {
     font-family: AdwaitaMono;
-    line-height: 1.5;
+    line-height: 1.6;
     max-width: 102ch;
     margin: 4lh auto;
     color: #444;
 }
 
+
 /* Custom TUI-like box thing */
+
 .box {
     @property --section {
         syntax: "<string>";
@@ -28,13 +31,13 @@ body {
     }
 
     position: relative;
-    padding: 2lh 2ch;
-    margin: 1lh 0;
+    padding: 1lh 2ch;
+    margin-top: 1lh;
 
     &::before {
         content: var(--section);
         position: absolute;
-        translate: -1ch -2lh;
+        translate: -1ch -1lh;
         background-color: white;
         padding: 0 1ch;
     }
@@ -56,23 +59,23 @@ body {
 /* Page sections */
 
 header {
-    --section: "Header"
+    --section: "Header";
 }
 
 nav {
-    --section: "Navigation"
+    --section: "Navigation";
 }
 
 aside {
-    --section: "Aside"
+    --section: "Aside";
 }
 
 main {
-    --section: "Main"
+    --section: "Main";
 }
 
 footer {
-    --section: "Footer"
+    --section: "Footer";
 }
 
 
