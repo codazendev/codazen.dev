@@ -9,14 +9,13 @@
         <link rel="stylesheet" href="/assets/css/base.css">
     </head>
     <body>
-        <div id="header-tag">
-            Header
-        </div>
         <header class="box">
+            <p>Header</p>
             Hello! I'm codazen. I'm working on this silly little site for my silly little projects. Catch you along the way :>
         </header>
-        
+
         <nav class="box">
+            <p>Nav</p>
             <ul id="navlist">
                 <li><a href="/">Home</a></li>
                 <li><a href="/musings/">Musings</a></li>
@@ -29,15 +28,18 @@
         
         <div id="content">
             <aside class="box">
+                <p>Sidebar</p>
                 idk
             </aside>
-            
+
             <main class="box">
+                <p>Main</p>
                 {{ content | safe }}
             </main>
         </div>
 
         <footer class="box">
+        <p>Footer</p>
             Copyright me or whatever
         </footer>
     </body>

@@ -1,10 +1,8 @@
 /* Imports */
-
 @import url(./normalize/modern-normalize.css);
 
 
 /* Custom fonts */
-
 @font-face {
     font-family: AdwaitaMono;
     src: url(./fonts/AdwaitaMono-Regular.ttf);
@@ -12,58 +10,37 @@
 
 
 /* Overall page */
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     font-family: AdwaitaMono;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.5;
     max-width: 102ch;
     margin: 4lh auto;
     color: #444;
 }
 
 
-/* Custom TUI-like box thing */
-
-#header-tag {
-    position: relative;
-    width: 6ch;
-    height: 1lh;
-    margin-bottom: -1lh;
-    margin-left: 2ch;
-    background: white;
-    z-index: 1;
-    border: 1px solid #444;
-}
-
+/* Custom styling for the different areas of the page */
 .box {
-    @property --section {
-        syntax: "<string>";
-        inherits: false;
-        initial-value: "WHUG?!?";
-    };
-    
-    position: relative;
-    padding: calc(1lh - 1px) calc(2ch - 1px);
+    outline: 1px solid #444;
     margin-bottom: 1lh;
-    border: 1px solid #444;
+    padding: 0 2ch 1lh 2ch;
+
+    > p:first-child {
+        width: fit-content;
+        outline: 1px solid white;
+        margin: 0;
+        margin-bottom: 0.5lh;
+        padding: 0;
+    }
 }
 
 
 /* Page sections */
-
-header {
-    --section: "Header";
-}
-
-nav {
-    --section: "Navigation";
-}
-
 #navlist {
     display: flex;
     justify-content: space-around;
@@ -78,22 +55,14 @@ nav {
 }
 
 aside {
-    --section: "Aside";
     width: 20ch;
 }
 
 main {
-    --section: "Main";
     width: 80ch;
 }
 
-footer {
-    --section: "Footer";
-}
-
-
 /* Links */
-
 a {
     color: #444;
 }
