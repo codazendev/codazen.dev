@@ -1,11 +1,30 @@
-/* Imports */
-@import url(./normalize/modern-normalize.css);
-
-
-/* Custom fonts */
+/* Custom font */
 @font-face {
     font-family: AdwaitaMono;
     src: url(./fonts/AdwaitaMono-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AdwaitaMono;
+    src: url(./fonts/AdwaitaMono-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AdwaitaMono;
+    src: url(./fonts/AdwaitaMono-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: AdwaitaMono;
+    src: url(./fonts/AdwaitaMono-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -14,28 +33,34 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: AdwaitaMono;
     /* font-size: 18px; */
     line-height: 1.5;
     max-width: 102ch;
     margin: 4lh auto;
-    color: #444;
+    color: #ffffff;
+    background: linear-gradient(in oklch 180deg, #3500a6 0.0%, #c23d00 100.0%);
 }
 
 
 /* Custom styling for the different areas of the page */
 .box {
-    outline: 1px solid #444;
+    outline: 2px solid;
     margin-bottom: 1lh;
     padding: 0 2ch 1lh 2ch;
 
     > p:first-child {
         width: fit-content;
-        outline: 1px solid white;
+        outline: 2px solid;
         margin: 0;
-        margin-bottom: 0.5lh;
-        padding: 0;
+        margin-bottom: 1lh;
+        padding: 0 2ch;
+        font-weight: bold;
     }
 }
 
@@ -64,7 +89,7 @@ main {
 
 /* Links */
 a {
-    color: #444;
+    color: #ffffff;
 }
 
 a:link {
