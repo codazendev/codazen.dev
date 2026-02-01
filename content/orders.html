@@ -1,0 +1,9 @@
+---
+layout: base
+title: orders
+---
+<h2>These are my default orders for various restaurants. Makes it easy for me to send a link to a friend asking what I want.</h2>
+
+{% for order in collections.order %}
+<p><a href="{{ order.url }}">{{ order.data.title }}</a></p>
+{% endfor %}
