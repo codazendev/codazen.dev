@@ -1,0 +1,81 @@
+---
+layout: base
+title: so many frameworks
+tags: musing
+---
+<p>I have been confused for the longest time what all of these web development frameworks actually do for the developer.</p>
+<p>especially when it comes to the fact that this site (as of writing this) only uses eleventy and nunjucks. beyond that it's just hand-written html and css. i haven't even forayed into javascript yet because i don't know what it would be used for.</p>
+<p>a friend talked me through it and it helped me understand what each of these tools do and why they sound so similar in their descriptions without saying anything at all about what they actually provide for the developer.</p>
+
+<h2>Static site generator</h2>
+<p>SSGs are command-line tools that generate web pages files from plain text files.</p>
+<p>Static site generators use web template engines.</p>
+<p>They handle all the copy-pasting, file translation, and folder reorganization required to put your site's content into the proper HTML and folders for your website structure.</p>
+
+<h2>Template engine</h2>
+<p>Software that processes and combines content and template resources to produce documents transmittable over an internet protocol</p>
+<p>Examples:</p>
+<ul>
+    <li>nunjucks (engine written in javascript that parses plaintext files into HTML)</li>
+    <li>liquid (engine written in javascript that parses plaintext files into HTML)</li>
+</ul>
+
+<h2>Template language</h2>
+<p>A specialized programming language used to create templates that can be populated with content or data to produce documents or web pages.</p>
+<p>These aren't exclusive to documents or web pages; really these are just fancy text replacement systems that are extremely suitable for HTML content (which has a lot of repetition).</p>
+<p>This confused me for a while, but template languages themselves are just plain text files. In the domain of web development, template languages just tailor their syntax and functionality to be useful for markup language files - HTML, Markdown, and so on.</p>
+<ul>
+    <li>nunjucks (language for nunjucks engine)</li>
+    <li>liquid (language for liquid engine)</li>
+</ul>
+
+<h2>CSS tools</h2>
+<ul>
+    <li>CSS preprocessors</li>
+    <li>CSS extension languages</li>
+    <li>CSS frameworks</li>
+</ul>
+
+<h2>Web template system</h2>
+<p>Composed of:</p>
+<ul>
+    <li>Content resource - any file with input data stream, e.g. relational databases, XML files</li>
+    <li>Template resource - web templates specified according to a template language</li>
+    <li>Template engine - software that processes and combines the content and template resources to produce documents transmittable over an internet protocol</li>
+</ul>
+
+
+<ul>
+    <li>Eleventy</li>
+    <li>Hugo</li>
+    <li>Svelte</li>
+    <li>SvelteKit</li>
+    <li>Astro</li>
+    <li>Vite</li>
+    <li>Vue</li>
+    <li>Next</li>
+    <li>React</li>
+    <li>Nuxt</li>
+    <li>SASS</li>
+    <li>HTMX</li>
+    <li>Node.js</li>
+    <li>Jekyll</li>
+</ul>
+
+
+<h2>Frontend build tool</h2>
+vite
+
+<h2>Web framework</h2>
+astro
+
+<h2>Preprocessor</h2>
+<p>a program that processes its input data to produce output that is used as input in another program.</p>
+<p>my first thought was "is Prettier a preprocessor?" because to me that sounds like processing something before it's used elsewhere. but it turns out there's a difference; formatters format code, changing the style, while preprocessors transform the code. for example, text substitutions, macro expansions count, and so would a preprocessor that optimizes code by changing it.</p>
+<p>in this web development space of research i'm doing, it felt like CSS preprocessors were the only ones, but apparently there are HTML and javascript preprocessors, too.</p>
+
+Svelte
+renders UI components. you can compose these components and render an entire page with just Svelte, but you need more than just Svelte to write an entire app.
+
+SvelteKit
+offers basic functionalities like a router that updates your UI when a link is clicked. build optimizations, offline support, preloading pages, client-side rendering, and a bunch of other things. will look into more.
