@@ -45,7 +45,7 @@ body {
     max-width: 102ch;
     margin: 4lh auto;
     color: #ffffff;
-    background: linear-gradient(in oklch 180deg, #3500a6 0.0%, #c23d00 100.0%);
+    background: linear-gradient(in oklch 180deg, #0d96f8 0.0%, #9e068a 100.0%);
 }
 
 
@@ -54,7 +54,7 @@ body {
     outline: 2px solid;
     margin-bottom: 1lh;
     padding: 0 2ch 1lh 2ch;
-    background-color: teal;
+    background-color: #2f1a55;
 
     > p:first-child {
         width: fit-content;
