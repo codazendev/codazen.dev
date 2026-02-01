@@ -95,6 +95,18 @@ main {
     width: 80ch;
 }
 
+
+/* Typography (fancy word webdev nuts use. i just means headers and things) */
+h1, h2, h3, h4, h5, h6 {
+    /* font-size: 1lh; */
+    width: fit-content;
+}
+
+p {
+    width: fit-content;
+}
+
+
 /* Links */
 a {
     color: var(--text-color);
