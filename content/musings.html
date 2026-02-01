@@ -3,8 +3,8 @@ layout: base
 title: musings
 ---
 
-<h2>Things will go here eventually. I got lots of thoughts to share.</h2>
+<h2>Things will go here eventually. I got a lot of thoughts a lot of the time.</h2>
 
 {% for musing in collections.musing %}
-<a href="{{ musing.url }}">{{ musing.data.title }}</a>
+<p><a href="{{ musing.url }}">{{ musing.data.title }}</a></p>
 {% endfor %}

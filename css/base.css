@@ -35,6 +35,7 @@
 
 html {
     min-height: 100%;
+    margin: 0 1ch;
 }
 
 body {
@@ -48,11 +49,12 @@ body {
 }
 
 
-/* Custom styling for the different areas of the page */
+/* Custom styling for the section boxes and labels */
 .box {
     outline: 2px solid;
     margin-bottom: 1lh;
     padding: 0 2ch 1lh 2ch;
+    background-color: teal;
 
     > p:first-child {
         width: fit-content;
@@ -65,7 +67,7 @@ body {
 }
 
 
-/* Page sections */
+/* Section box styling */
 #navlist {
     display: flex;
     justify-content: space-around;
@@ -79,7 +81,7 @@ body {
     gap: 2ch;
 }
 
-aside {
+#sidebar {
     width: 20ch;
 }
 
